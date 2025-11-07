@@ -24,6 +24,9 @@ public class Katakana {
     @Column(name = "category", length = 20)
     private String category;
 
+    @Column(name = "stroke_order", length = 255)
+    private String stroke_order;
+
     @Enumerated(EnumType.STRING)
     @Column(name = "type", columnDefinition = "enum('base','dakuten','handakuten')")
     private Type type;
